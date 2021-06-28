@@ -1,0 +1,110 @@
+/*declarando variaveis no css para as cores padrão*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*formatação para todo o documento*/
+/*tambem chamado de reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+/* configurando a classe container*/
+header .container{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* config. especifica para o logo */
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/* config. especifica para os links do menu nav */
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+/*comando hover (salienta qdo o mouse passa em cima*/
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/item\ \(5\).jpg');
+    height: 800px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preta);
+    transition: 1s ease all;
+
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 10px;
+}
